@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cake Shop</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="css/img/logo.png">
+        <nav class="nav-bar ">
+            <ul>
+                <li><a class="text" id="home-title" href="#home">Home</a></li>
+                <li><a class="text" id="about-title" href="#about">About</a></li>
+                <li><a class="text" id="store-title" href="#store">Store</a></li>
+            </ul>
+        </nav>
+        <div class="holder">
+          
+            <div class="cart-buttons">
+                <button class="cart" id="cart">0 Items</button>
+                <button class="clear" id="clear">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <a id="home"><div class="home"></a>
+        <img src="css/img/1.jpg">
+        <h1 class="welcome">Welcome to <span class="name">Cake Shop</span></h1>
+        <button class="explore"><a href="#store" id="explore">Go To Menu</a></button>
+
+    </div>
+
+    <a id="about"><div class="about-us"></a>
+        <div class="about-us-container">
+            <h1>About <span class="us">Us</span></h1>
+            <p>100% veg. cake </p>
+            <button class="about-us-explore"><a href="#store" id="about-us-explore">Go To Menu</a></button>
+            <button class="about-us-explore1"><a href="#home" id="about-us-explore1">Home</a></button>
+        </div>
+        <img src="css/img/2.jpg">
+    </div>
+
+    <a id="store"><div class="main"></a>
+        <div class="title-container">
+            <h1 class="our-store">Our <span class="store">Menu</span></h1>
+        </div>
+        <div class="button-holder">
+            <button class="filter-button" id="all">All</button>
+            <button class="filter-button" id="cake-button">Cakes</button>
+            <button class="filter-button" id="cupcake-button">Cupcakes</button>
+            <button class="filter-button" id="sweet-button">Sweets</button>
+            <button class="filter-button" id="doughnut-button">Doughnuts</button>
+        </div>
+
+        <div class="search-bar-container">
+            <p class="search-icon">&#x1F50D</p>
+            <input type="text" placeholder="item..." value="" class="search-bar" id="search-bar" onkeyup="textBarSearch()">
+        </div>
+
+        <div class="confec-holder">
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="css/img/Macaroons.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Macaroons</p>
+                    <p class="confec-price">    &#8377; <span class="price">350</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="css/img/Vanilla.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Vanilla Cupcake</p>
+                    <p class="confec-price">    &#8377; <span class="price">200</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="css/img/Carrot Cake Slice.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Carrot Cake Slice</p>
+                    <p class="confec-price">    &#8377; <span class="price">230</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="css/img/Party Ring Doughnut.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Party Ring Doughnut</p>
+                    <p class="confec-price">    &#8377;<span class="price">450</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="css/img/Jelly Sweets.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Jelly Sweets</p>
+                    <p class="confec-price">    &#8377; <span class="price">300</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="css/img/Chocolate Cupcake.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Chocolate Cupcake</p>
+                    <p class="confec-price">    &#8377; <span class="price">452</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="css/img/Bear Toffee Doughnut.webp" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Bear Toffee Doughnut</p>
+                    <p class="confec-price">    &#8377; <span class="price">410</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="css/img/cake-3.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Pink Rose Cake Slice</p>
+                    <p class="confec-price">    &#8377; <span class="price">520</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="doughnut-box">
+                <div class="image-holder">
+                    <img src="css/img/Chocolate Doughnut.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Chocolate Doughnut</p>
+                    <p class="confec-price">    &#8377; <span class="price">460</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        
+
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="css/img/sweets-3.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Chocolate & Raspberries</p>
+                    <p class="confec-price">    &#8377; <span class="price">650</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cupcake-box">
+                <div class="image-holder">
+                    <img src="css/img/cupcake-3.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Blue Vanilla Cupcake</p>
+                    <p class="confec-price">    &#8377; <span class="price">360</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+
+            <div class="cake-box">
+                <div class="image-holder">
+                    <img src="css/img/cake-2.jpeg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Cream Cheese Cake Slice</p>
+                    <p class="confec-price"> &#8377; <span class="price">390</span></p>
+                    <button class="add-to-cart">&#x1F6D2</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>COPYRIGHT &#169 sachin patel</p>
+        </footer>
+    </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
